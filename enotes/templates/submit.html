@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %} saved NOTES {% endblock title %}
+{% block body %}
+    <div>
+        {% for key, value in info.items %}
+            <p>{{ key }} - {{ value }}</p>
+        {% endfor %}
+    </div>
+{% endblock body %}
